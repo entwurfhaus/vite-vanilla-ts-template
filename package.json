@@ -1,7 +1,7 @@
 {
   "name": "vite-vanilla-ts-template",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
