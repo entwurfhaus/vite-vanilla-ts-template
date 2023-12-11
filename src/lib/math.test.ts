@@ -8,8 +8,8 @@ describe("math tests", () => {
   });
 
   test("subtract", () => {
-    const result = subtract(1234, 111);
-    expect(result).toBe(1123);
+    const result = subtract(122, 111);
+    expect(result).toBe(11);
   });
 
   test("multiply", () => {
