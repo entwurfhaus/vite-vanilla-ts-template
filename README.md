@@ -3,6 +3,7 @@
 <p align="center">
     <img alt="license" src="https://img.shields.io/github/license/entwurfhaus/vite-vanilla-ts-module?style=flat-square" />
     <img alt="release" src="https://img.shields.io/github/v/tag/entwurfhaus/vite-vanilla-ts-template?label=release&style=flat-square" />
+    <img alt="stargazers" src="https://img.shields.io/github/stars/entwurfhaus/vite-vanilla-ts-template?style=flat-square" />
 </p>
 
 This is a minimalist Vite `vanilla-ts` template, for developing `ts` supported modules for publishing onto `npm`.
