@@ -3,7 +3,6 @@
 <p align="center">
     <img alt="license" src="https://img.shields.io/github/license/entwurfhaus/vite-vanilla-ts-module?style=flat-square" />
     <img alt="release" src="https://img.shields.io/github/v/tag/entwurfhaus/vite-vanilla-ts-template?label=release&style=flat-square" />
-    <img alt="visits" src="https://hits.deltapapa.io/github/entwurfhaus/vite-vanilla-ts-template.svg" />
 </p>
 
 This is a minimalist Vite `vanilla-ts` template, for developing `ts` supported modules for publishing onto `npm`.
@@ -31,19 +30,28 @@ pnpm build
 
 ### Why `pnpm` and not `npm` or `yarn`?
 
-This minimalist template is meant to be easily migrated to monorepo frameworks, such as `turbo` (Turborepo) and `nx` (Nx). Thus, it is why files like the `tsconfig.json` is simple.
+This minimalist template is meant to be easily migrated to monorepo frameworks, such as `turbo` (Turborepo) and `nx` (Nx). Thus, it is why files like `tsconfig.json` have a simple configuration.
+
+And pnpm offers several benefits:
+
+1. Efficient disk space usage through a content-addressable store
+2. Faster installation times compared to npm and yarn
+3. Strict dependency resolution, preventing phantom dependencies
+4. Built-in monorepo support with workspaces
+5. Compatibility with npm and yarn workflows
+6. Improved security with a stricter package management approach
 
 ### What is configured in this template?
 
-We're using `vite-plugin-dts`, which is a useful `vite` plugin, to automatically generate & produce the `index.d.ts` file in the `dist`. Awesome!
+- Generate declaration Typescript file: `vite-plugin-dts`: A useful Vite plugin that automatically generates and produces the `index.d.ts` file in the `dist` folder.
+- Linting: `eslint`: Standard configuration included, together with `eslint-plugin-simple-import-sort` for organizing imports (a must-have for code organization).
+- Code coverage: Using `istanbul` integration with `vitest` by default. This is optional and can be reconfigured to use `coverage-c8` (or its future renamed version) if preferred.
 
-Next, we're by default using `istanbul` code coverage integration with `vitest` - it's purely optional to use it, as the template can be reconfigured to `coverage-c8` (or new `c8` name if it is renamed again in near future).
+> And you can configure & add-on anything you like, to suit your development whether if it is the standalone module repo, or module within a monorepo.
 
-### Since this template is considered minimalist, what's missing that would make this template better?
+## Github actions (optional)
 
-As a start `prettier` and `eslint` configurations have been left out, because I'd leave these configurations up to you - as they're not that difficult to configure. And of course, you may have a more complex configuration of `prettier` / `biomejs` and `eslint` and more, for your projects - such as for `turbo` (turborepo) or `nx` (NX).
-
-> Bonus tip: If you want to easily manage your dependencies' versioning, check out `taze` (https://github.com/antfu/taze). `taze` is awesome, and so far it works well in a `nx` monorepo that I've been working on. There are useful commands like `pnpm up` / `pnpm up --latest` etc, or monorepo features that assist dependency management - so keep an eye out for new features, commands, packages in the near future!
+I've added Github actions in this template - delete the `.github` folder if you're not using Github actions in your devops pipeline.
 
 ## Testing
 

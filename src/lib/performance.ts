@@ -1,13 +1,15 @@
 /**
  * To calculate the function speed
  *
- * @param {(...args: any[]) => T} func
- * @param {any[]} args
- * @returns
+ * @template T The return type of the function
+ * @template Args The types of the function arguments
+ * @param {(...args: Args) => T} func The function to measure
+ * @param {Args} args The arguments to pass to the function
+ * @returns {number} The execution time in milliseconds
  */
-export function calculateFunctionSpeed<T>(
-  func: (...args: any[]) => T,
-  ...args: any[]
+export function calculateFunctionSpeed<T, Args extends unknown[]>(
+  func: (...args: Args) => T,
+  ...args: Args
 ): number {
   const startTime = performance.now();
   func(...args);

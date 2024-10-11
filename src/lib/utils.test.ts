@@ -1,4 +1,5 @@
 import { describe, expect, test } from "vitest";
+
 import { checkPasswordStrength, hello } from "./utils";
 
 describe("utils tests", () => {
