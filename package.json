@@ -1,5 +1,5 @@
 {
-  "name": "vite-vanilla-ts-template",
+  "name": "@entwurfhaus/vite-vanilla-ts-template",
   "description": "A minimalist template for building a library with Vite and TypeScript",
   "author": "Brian Ng",
   "keywords": [
@@ -7,7 +7,7 @@
     "typescript",
     "library"
   ],
-  "private": true,
+  "private": false,
   "version": "1.0.2",
   "type": "module",
   "main": "./dist/index.cjs",
