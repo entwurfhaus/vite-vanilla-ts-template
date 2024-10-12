@@ -6,10 +6,10 @@
     <img alt="stargazers" src="https://img.shields.io/github/stars/entwurfhaus/vite-vanilla-ts-template?style=flat-square" />
 </p>
 
-This is a minimalist Vite `vanilla-ts` template, for developing `ts` supported modules for publishing onto `npm`.
-
 > Check out the older version of this template, https://github.com/entwurfhaus/vite-vanilla-ts-module.
 > And always check the `package.json` dependencies - this template scaffolded from Vite 5.x, and compatible with Node 18.x & beyond
+
+This is a minimalist Vite `vanilla-ts` template, for developing `ts` supported modules for publishing onto `npm`.
 
 ```bash
 npx degit entwurfhaus/vite-vanilla-ts-template my-awesome-package
